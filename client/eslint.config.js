@@ -22,7 +22,6 @@ export default tseslint.config(
       stylistic
     },
     rules: {
-      // "object-curly-spacing": ["error", "always"],
       // STYLISTIC
       "stylistic/semi": ['error', 'never'],
       "stylistic/array-bracket-spacing": ['error', 'never'],
@@ -43,6 +42,7 @@ export default tseslint.config(
       "stylistic/space-before-blocks": ["error", 'always'],
       // jsx
       "stylistic/jsx-closing-bracket-location": [1, { selfClosing: 'after-props' }],
+      "stylistic/jsx-function-call-newline": ['error', 'always'],
       "stylistic/jsx-closing-tag-location": 1,
       "stylistic/jsx-closing-tag-location": [1, 'tag-aligned'],
       "stylistic/jsx-curly-spacing": ['error', 'always'],
@@ -55,7 +55,6 @@ export default tseslint.config(
       }],
       "stylistic/jsx-sort-props": ['error', { "callbacksLast": true, "multiline": 'first' }],
       "stylistic/jsx-tag-spacing": ['error', { "beforeSelfClosing": "always" }],
-      "stylistic/max-len": ["error", { "code": 80 }],
       ...reactHooks.configs.recommended.rules,
       'react-refresh/only-export-components': [
         'warn',
